@@ -1,3 +1,2 @@
-target "secretmap" do
-  pod "EstimoteProximitySDK"
+target "fitcoin" do
 end

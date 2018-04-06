@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:secretmap.xcodeproj">
+      location = "self:/Users/antonmc/Desktop/code/kubecoin/fitcoin.xcodeproj">
    </FileRef>
 </Workspace>

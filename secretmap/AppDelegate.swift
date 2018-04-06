@@ -11,7 +11,6 @@ import CoreData
 import HealthKit
 import CoreMotion
 
-import EstimoteProximitySDK
 
 extension Notification.Name {
     static let zoneEntered = Notification.Name(
@@ -46,10 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var pace:Double! = nil
     
     var pedometer = CMPedometer()
-    
-    var proximityObserver: EPXProximityObserver!
-    
-    var zones = [EPXProximityZone]()
+
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -72,13 +68,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func intializeBeaconCloud(){
-        let cloudCredentials = EPXCloudCredentials(appID: "secretmap-bia", appToken: "4f3dc3aea74ca3b25cf48409ad575155")
-        
-        self.proximityObserver = EPXProximityObserver(
-            credentials: cloudCredentials,
-            errorBlock: { error in
-                print("proximity observer error: \(error)")
-        })
+       
     }
     
     func initializeData(){
@@ -190,19 +180,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func addBeacon( beacon:iBeacon ){
         
-        let zone = EPXProximityZone(range: EPXProximityRange(desiredMeanTriggerDistance: 10.0)!, attachmentKey: beacon.key, attachmentValue: beacon.value)
-        
-        zone.onEnterAction = { attachment in
-            print("entering " + beacon.key + " " + beacon.value)
-            self.sendZoneData(id: beacon.zone)
-            NotificationCenter.default.post( name: Notification.Name.zoneEntered, object: beacon)
-        }
-        
-        zone.onExitAction = { attachment in
-            print("exiting " + beacon.key + " " + beacon.value)
-        }
-        
-        self.zones.append(zone)
+       
     }
 
     private func addBeacons(beacons:iBeacons){
@@ -210,7 +188,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.addBeacon(beacon: beacon)
         }
         
-        self.proximityObserver.startObserving(self.zones)
     }
     
     func getStartDate() -> Date{

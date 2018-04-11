@@ -19,8 +19,6 @@
 		A21B5EF7202374890087ADB6 /* secretmap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A21B5EF5202374890087ADB6 /* secretmap.xcdatamodeld */; };
 		A2234E0D1FF4220B002B8244 /* BookletItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2234E0C1FF4220B002B8244 /* BookletItemController.swift */; };
 		A2234E191FF5B108002B8244 /* booklet.json in Resources */ = {isa = PBXBuildFile; fileRef = A2234E181FF5B108002B8244 /* booklet.json */; };
-		A2234E231FF899AC002B8244 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = A2234E221FF899AB002B8244 /* glasses.png */; };
-		A2234E251FF99B84002B8244 /* footprint-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2234E241FF99B84002B8244 /* footprint-tab.png */; };
 		A2321A7820377DD900E34DA7 /* Ship.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A2321A7620377DD900E34DA7 /* Ship.mtl */; };
 		A2321A7920377DD900E34DA7 /* Ship.obj in Resources */ = {isa = PBXBuildFile; fileRef = A2321A7720377DD900E34DA7 /* Ship.obj */; };
 		A2321A7B20377E0C00E34DA7 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2321A7A20377E0C00E34DA7 /* Ship.swift */; };
@@ -29,12 +27,6 @@
 		A2337ACF203616CD00C0ECFF /* Pirate.scn in Resources */ = {isa = PBXBuildFile; fileRef = A2337ACE203616CD00C0ECFF /* Pirate.scn */; };
 		A2337AD1203616D200C0ECFF /* Pirate.obj in Resources */ = {isa = PBXBuildFile; fileRef = A2337AD0203616D200C0ECFF /* Pirate.obj */; };
 		A2337AD3203616D900C0ECFF /* Pirate.mtl in Resources */ = {isa = PBXBuildFile; fileRef = A2337AD2203616D900C0ECFF /* Pirate.mtl */; };
-		A23754D32006A35C00409B20 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = A23754D22006A35C00409B20 /* compass.png */; };
-		A23754D52006A36C00409B20 /* anctor-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A23754D42006A36C00409B20 /* anctor-tab.png */; };
-		A23754E82006E3E200409B20 /* Floorplans in Resources */ = {isa = PBXBuildFile; fileRef = A23754E72006E3E200409B20 /* Floorplans */; };
-		A26F96272028B6EE004247D5 /* footprint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A26F96262028B6EE004247D5 /* footprint@2x.png */; };
-		A26F96292028B6F5004247D5 /* distance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A26F96282028B6F5004247D5 /* distance@2x.png */; };
-		A26F962B2028B705004247D5 /* fitcoin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A26F962A2028B705004247D5 /* fitcoin@2x.png */; };
 		A28E57CA2011558100CE4C58 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28E57C92011558100CE4C58 /* HealthKit.framework */; };
 		A28E57CC201659A200CE4C58 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E57CB201659A200CE4C58 /* HealthKitManager.swift */; };
 		A2908D721FE2BEE200A0E9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2908D711FE2BEE200A0E9BE /* AppDelegate.swift */; };
@@ -44,6 +36,24 @@
 		A2908D7E1FE2BEE200A0E9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2908D7C1FE2BEE200A0E9BE /* LaunchScreen.storyboard */; };
 		A2908D891FE2BEE200A0E9BE /* secretmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2908D881FE2BEE200A0E9BE /* secretmapTests.swift */; };
 		A2908D941FE2BEE200A0E9BE /* secretmapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2908D931FE2BEE200A0E9BE /* secretmapUITests.swift */; };
+		A2AF794D207D7E0E00AA99EE /* Microservices@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF793B207D7E0D00AA99EE /* Microservices@2x.png */; };
+		A2AF794E207D7E0E00AA99EE /* kubecoin logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF793C207D7E0D00AA99EE /* kubecoin logo.png */; };
+		A2AF794F207D7E0E00AA99EE /* Application.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF793D207D7E0D00AA99EE /* Application.png */; };
+		A2AF7950207D7E0E00AA99EE /* Microservices.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF793E207D7E0D00AA99EE /* Microservices.png */; };
+		A2AF7951207D7E0E00AA99EE /* Secure.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF793F207D7E0D00AA99EE /* Secure.png */; };
+		A2AF7952207D7E0E00AA99EE /* Cloud@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7940207D7E0D00AA99EE /* Cloud@3x.png */; };
+		A2AF7953207D7E0E00AA99EE /* Application@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7941207D7E0D00AA99EE /* Application@3x.png */; };
+		A2AF7954207D7E0E00AA99EE /* Microservices@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7942207D7E0D00AA99EE /* Microservices@3x.png */; };
+		A2AF7955207D7E0E00AA99EE /* Cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7943207D7E0D00AA99EE /* Cloud@2x.png */; };
+		A2AF7956207D7E0E00AA99EE /* Application@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7944207D7E0D00AA99EE /* Application@2x.png */; };
+		A2AF7957207D7E0E00AA99EE /* kubecoin logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7945207D7E0E00AA99EE /* kubecoin logo@3x.png */; };
+		A2AF7958207D7E0E00AA99EE /* Secure@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7946207D7E0E00AA99EE /* Secure@3x.png */; };
+		A2AF7959207D7E0E00AA99EE /* Run.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7947207D7E0E00AA99EE /* Run.png */; };
+		A2AF795A207D7E0E00AA99EE /* Secure@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7948207D7E0E00AA99EE /* Secure@2x.png */; };
+		A2AF795B207D7E0E00AA99EE /* kubecoin logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7949207D7E0E00AA99EE /* kubecoin logo@2x.png */; };
+		A2AF795C207D7E0E00AA99EE /* Run@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794A207D7E0E00AA99EE /* Run@2x.png */; };
+		A2AF795D207D7E0E00AA99EE /* Run@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794B207D7E0E00AA99EE /* Run@3x.png */; };
+		A2AF795E207D7E0E00AA99EE /* Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794C207D7E0E00AA99EE /* Cloud.png */; };
 		A2E815A31FE876A000EC6F2A /* BookletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E815A21FE876A000EC6F2A /* BookletController.swift */; };
 		A2F099EE2059C9CD006AAABE /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F099ED2059C9CD006AAABE /* AssetViewController.swift */; };
 		A2F904F42051E242008E1FFA /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F904F02051E242008E1FFA /* Treasure.swift */; };
@@ -81,19 +91,8 @@
 		92BF0681203E761900B388F9 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		92CE166A203F8BF8002B628C /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		A21B5EF6202374890087ADB6 /* secretmap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = secretmap.xcdatamodel; sourceTree = "<group>"; };
-		A2234DFA1FF41409002B8244 /* blockchain@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blockchain@2x.png"; path = "../../../../../Creative Cloud Files/2x/blockchain@2x.png"; sourceTree = "<group>"; };
-		A2234DFB1FF41409002B8244 /* kubernetes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kubernetes@2x.png"; path = "../../../../../Creative Cloud Files/2x/kubernetes@2x.png"; sourceTree = "<group>"; };
-		A2234DFC1FF4140A002B8244 /* scales@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scales@2x.png"; path = "../../../../../Creative Cloud Files/2x/scales@2x.png"; sourceTree = "<group>"; };
-		A2234DFD1FF4140A002B8244 /* girl pirate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "girl pirate@2x.png"; path = "../../../../../Creative Cloud Files/2x/girl pirate@2x.png"; sourceTree = "<group>"; };
-		A2234DFE1FF4140A002B8244 /* boy pirate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "boy pirate@2x.png"; path = "../../../../../Creative Cloud Files/2x/boy pirate@2x.png"; sourceTree = "<group>"; };
-		A2234E001FF4140A002B8244 /* telescope@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "telescope@2x.png"; path = "../../../../../Creative Cloud Files/2x/telescope@2x.png"; sourceTree = "<group>"; };
-		A2234E011FF4140A002B8244 /* watson@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "watson@2x.png"; path = "../../../../../Creative Cloud Files/2x/watson@2x.png"; sourceTree = "<group>"; };
 		A2234E0C1FF4220B002B8244 /* BookletItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletItemController.swift; sourceTree = "<group>"; };
 		A2234E181FF5B108002B8244 /* booklet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = booklet.json; sourceTree = "<group>"; };
-		A2234E1A1FF6F30B002B8244 /* map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map@2x.png"; path = "../../../../../Creative Cloud Files/2x/map@2x.png"; sourceTree = "<group>"; };
-		A2234E1C1FF82CF1002B8244 /* anchor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "anchor@2x.png"; path = "../../../../../Creative Cloud Files/2x/anchor@2x.png"; sourceTree = "<group>"; };
-		A2234E221FF899AB002B8244 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
-		A2234E241FF99B84002B8244 /* footprint-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footprint-tab.png"; sourceTree = "<group>"; };
 		A2321A7620377DD900E34DA7 /* Ship.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ship.mtl; sourceTree = "<group>"; };
 		A2321A7720377DD900E34DA7 /* Ship.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ship.obj; sourceTree = "<group>"; };
 		A2321A7A20377E0C00E34DA7 /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
@@ -102,12 +101,6 @@
 		A2337ACE203616CD00C0ECFF /* Pirate.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Pirate.scn; sourceTree = "<group>"; };
 		A2337AD0203616D200C0ECFF /* Pirate.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pirate.obj; sourceTree = "<group>"; };
 		A2337AD2203616D900C0ECFF /* Pirate.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pirate.mtl; sourceTree = "<group>"; };
-		A23754D22006A35C00409B20 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
-		A23754D42006A36C00409B20 /* anctor-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anctor-tab.png"; sourceTree = "<group>"; };
-		A23754E72006E3E200409B20 /* Floorplans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Floorplans; sourceTree = "<group>"; };
-		A26F96262028B6EE004247D5 /* footprint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footprint@2x.png"; sourceTree = "<group>"; };
-		A26F96282028B6F5004247D5 /* distance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "distance@2x.png"; sourceTree = "<group>"; };
-		A26F962A2028B705004247D5 /* fitcoin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fitcoin@2x.png"; sourceTree = "<group>"; };
 		A28E57C72011558100CE4C58 /* secretmap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = secretmap.entitlements; sourceTree = "<group>"; };
 		A28E57C92011558100CE4C58 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A28E57CB201659A200CE4C58 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
@@ -124,6 +117,24 @@
 		A2908D8F1FE2BEE200A0E9BE /* fitcoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitcoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2908D931FE2BEE200A0E9BE /* secretmapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretmapUITests.swift; sourceTree = "<group>"; };
 		A2908D951FE2BEE200A0E9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2AF793B207D7E0D00AA99EE /* Microservices@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Microservices@2x.png"; sourceTree = "<group>"; };
+		A2AF793C207D7E0D00AA99EE /* kubecoin logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kubecoin logo.png"; sourceTree = "<group>"; };
+		A2AF793D207D7E0D00AA99EE /* Application.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Application.png; sourceTree = "<group>"; };
+		A2AF793E207D7E0D00AA99EE /* Microservices.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microservices.png; sourceTree = "<group>"; };
+		A2AF793F207D7E0D00AA99EE /* Secure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Secure.png; sourceTree = "<group>"; };
+		A2AF7940207D7E0D00AA99EE /* Cloud@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cloud@3x.png"; sourceTree = "<group>"; };
+		A2AF7941207D7E0D00AA99EE /* Application@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Application@3x.png"; sourceTree = "<group>"; };
+		A2AF7942207D7E0D00AA99EE /* Microservices@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Microservices@3x.png"; sourceTree = "<group>"; };
+		A2AF7943207D7E0D00AA99EE /* Cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cloud@2x.png"; sourceTree = "<group>"; };
+		A2AF7944207D7E0D00AA99EE /* Application@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Application@2x.png"; sourceTree = "<group>"; };
+		A2AF7945207D7E0E00AA99EE /* kubecoin logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kubecoin logo@3x.png"; sourceTree = "<group>"; };
+		A2AF7946207D7E0E00AA99EE /* Secure@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Secure@3x.png"; sourceTree = "<group>"; };
+		A2AF7947207D7E0E00AA99EE /* Run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Run.png; sourceTree = "<group>"; };
+		A2AF7948207D7E0E00AA99EE /* Secure@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Secure@2x.png"; sourceTree = "<group>"; };
+		A2AF7949207D7E0E00AA99EE /* kubecoin logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kubecoin logo@2x.png"; sourceTree = "<group>"; };
+		A2AF794A207D7E0E00AA99EE /* Run@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run@2x.png"; sourceTree = "<group>"; };
+		A2AF794B207D7E0E00AA99EE /* Run@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run@3x.png"; sourceTree = "<group>"; };
+		A2AF794C207D7E0E00AA99EE /* Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cloud.png; sourceTree = "<group>"; };
 		A2E815A21FE876A000EC6F2A /* BookletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletController.swift; sourceTree = "<group>"; };
 		A2F099ED2059C9CD006AAABE /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A2F904F02051E242008E1FFA /* Treasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
@@ -175,22 +186,24 @@
 		A2234DE31FF412EA002B8244 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				A2234DFA1FF41409002B8244 /* blockchain@2x.png */,
-				A2234DFE1FF4140A002B8244 /* boy pirate@2x.png */,
-				A2234E1A1FF6F30B002B8244 /* map@2x.png */,
-				A2234DFD1FF4140A002B8244 /* girl pirate@2x.png */,
-				A26F96262028B6EE004247D5 /* footprint@2x.png */,
-				A2234DFB1FF41409002B8244 /* kubernetes@2x.png */,
-				A26F96282028B6F5004247D5 /* distance@2x.png */,
-				A26F962A2028B705004247D5 /* fitcoin@2x.png */,
-				A2234DFC1FF4140A002B8244 /* scales@2x.png */,
-				A23754D22006A35C00409B20 /* compass.png */,
-				A2234E241FF99B84002B8244 /* footprint-tab.png */,
-				A23754D42006A36C00409B20 /* anctor-tab.png */,
-				A2234E221FF899AB002B8244 /* glasses.png */,
-				A2234E001FF4140A002B8244 /* telescope@2x.png */,
-				A2234E1C1FF82CF1002B8244 /* anchor@2x.png */,
-				A2234E011FF4140A002B8244 /* watson@2x.png */,
+				A2AF793D207D7E0D00AA99EE /* Application.png */,
+				A2AF7944207D7E0D00AA99EE /* Application@2x.png */,
+				A2AF7941207D7E0D00AA99EE /* Application@3x.png */,
+				A2AF794C207D7E0E00AA99EE /* Cloud.png */,
+				A2AF7943207D7E0D00AA99EE /* Cloud@2x.png */,
+				A2AF7940207D7E0D00AA99EE /* Cloud@3x.png */,
+				A2AF793C207D7E0D00AA99EE /* kubecoin logo.png */,
+				A2AF7949207D7E0E00AA99EE /* kubecoin logo@2x.png */,
+				A2AF7945207D7E0E00AA99EE /* kubecoin logo@3x.png */,
+				A2AF793E207D7E0D00AA99EE /* Microservices.png */,
+				A2AF793B207D7E0D00AA99EE /* Microservices@2x.png */,
+				A2AF7942207D7E0D00AA99EE /* Microservices@3x.png */,
+				A2AF7947207D7E0E00AA99EE /* Run.png */,
+				A2AF794A207D7E0E00AA99EE /* Run@2x.png */,
+				A2AF794B207D7E0E00AA99EE /* Run@3x.png */,
+				A2AF793F207D7E0D00AA99EE /* Secure.png */,
+				A2AF7948207D7E0E00AA99EE /* Secure@2x.png */,
+				A2AF7946207D7E0E00AA99EE /* Secure@3x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -227,7 +240,6 @@
 		A2908D651FE2BEE200A0E9BE = {
 			isa = PBXGroup;
 			children = (
-				A23754E72006E3E200409B20 /* Floorplans */,
 				A2908D701FE2BEE200A0E9BE /* secretmap */,
 				A2908D871FE2BEE200A0E9BE /* secretmapTests */,
 				A2908D921FE2BEE200A0E9BE /* secretmapUITests */,
@@ -413,27 +425,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AF7954207D7E0E00AA99EE /* Microservices@3x.png in Resources */,
+				A2AF795D207D7E0E00AA99EE /* Run@3x.png in Resources */,
 				A2F904FE2051E2D5008E1FFA /* Treasure.obj in Resources */,
+				A2AF794D207D7E0E00AA99EE /* Microservices@2x.png in Resources */,
 				A2F905012051E2F8008E1FFA /* Treasure.scn in Resources */,
 				A2321A7D20377E3800E34DA7 /* Ship.scn in Resources */,
+				A2AF795E207D7E0E00AA99EE /* Cloud.png in Resources */,
 				A2337AD1203616D200C0ECFF /* Pirate.obj in Resources */,
-				A23754E82006E3E200409B20 /* Floorplans in Resources */,
+				A2AF7955207D7E0E00AA99EE /* Cloud@2x.png in Resources */,
+				A2AF7959207D7E0E00AA99EE /* Run.png in Resources */,
+				A2AF794E207D7E0E00AA99EE /* kubecoin logo.png in Resources */,
+				A2AF794F207D7E0E00AA99EE /* Application.png in Resources */,
 				A2908D7E1FE2BEE200A0E9BE /* LaunchScreen.storyboard in Resources */,
-				A26F96272028B6EE004247D5 /* footprint@2x.png in Resources */,
+				A2AF7953207D7E0E00AA99EE /* Application@3x.png in Resources */,
 				A2337ACF203616CD00C0ECFF /* Pirate.scn in Resources */,
-				A2234E231FF899AC002B8244 /* glasses.png in Resources */,
-				A26F96292028B6F5004247D5 /* distance@2x.png in Resources */,
 				A2321A7820377DD900E34DA7 /* Ship.mtl in Resources */,
+				A2AF7951207D7E0E00AA99EE /* Secure.png in Resources */,
+				A2AF7958207D7E0E00AA99EE /* Secure@3x.png in Resources */,
+				A2AF7950207D7E0E00AA99EE /* Microservices.png in Resources */,
 				A2337AD3203616D900C0ECFF /* Pirate.mtl in Resources */,
-				A23754D32006A35C00409B20 /* compass.png in Resources */,
+				A2AF7952207D7E0E00AA99EE /* Cloud@3x.png in Resources */,
 				A2321A7920377DD900E34DA7 /* Ship.obj in Resources */,
-				A23754D52006A36C00409B20 /* anctor-tab.png in Resources */,
 				A2F904FF2051E2D5008E1FFA /* Treasure.mtl in Resources */,
+				A2AF795A207D7E0E00AA99EE /* Secure@2x.png in Resources */,
+				A2AF795B207D7E0E00AA99EE /* kubecoin logo@2x.png in Resources */,
+				A2AF7957207D7E0E00AA99EE /* kubecoin logo@3x.png in Resources */,
+				A2AF7956207D7E0E00AA99EE /* Application@2x.png in Resources */,
 				A2908D7B1FE2BEE200A0E9BE /* Assets.xcassets in Resources */,
-				A2234E251FF99B84002B8244 /* footprint-tab.png in Resources */,
 				A2234E191FF5B108002B8244 /* booklet.json in Resources */,
+				A2AF795C207D7E0E00AA99EE /* Run@2x.png in Resources */,
 				A2908D791FE2BEE200A0E9BE /* Main.storyboard in Resources */,
-				A26F962B2028B705004247D5 /* fitcoin@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +721,7 @@
 				DEVELOPMENT_TEAM = CT3Y8HLWZY;
 				INFOPLIST_FILE = secretmap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anton.fitcoin;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.anton.fitcoin-org.anton.fitcoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -717,7 +739,7 @@
 				DEVELOPMENT_TEAM = CT3Y8HLWZY;
 				INFOPLIST_FILE = secretmap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.anton.fitcoin;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.anton.fitcoin-org.anton.fitcoin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

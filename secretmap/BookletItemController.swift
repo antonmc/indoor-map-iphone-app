@@ -60,14 +60,6 @@ class BookletItemController: UIViewController {
         }
     }
     
-    var subtextString: String = "" {
-        didSet {
-            if let subtextView = subtextView {
-                subtextView.text = subtextString
-            }
-        }
-    }
-    
     var statementString: String = "" {
         didSet {
             if let statement = statement {
@@ -88,7 +80,6 @@ class BookletItemController: UIViewController {
         contentImageView!.image = image
         pageTitleView!.text = titleString
         subtitleView!.text = subTitleString
-        subtextView!.text = subtextString
         statement?.text = statementString
         link = linkString
     }

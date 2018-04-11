@@ -46,35 +46,38 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
             return
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                print("No internet")
-                
-                // use booklet.json if no internet
-                self.useDefaultPages()
-            }
-            
-            guard let data = data else { return }
-            
-            do {
-                //Decode retrived data with JSONDecoder and assing type of Article object
-                let pages = try JSONDecoder().decode([Article].self, from: data)
-                
-                //Get back to the main queue
-                DispatchQueue.main.async {
-                    self.pages = pages
-                    self.pageCount = pages.count
-                    self.createPageViewController()
-                    self.setupPageControl()
-                }
-            } catch let jsonError {
-                print(jsonError)
-                
-                // use booklet.json if jsonError
-                self.useDefaultPages()
-            }
-        }.resume()
+        
+        self.useDefaultPages()
+
+//        URLSession.shared.dataTask(with: url) { (data, response, error) in
+//            if error != nil {
+//                print(error!.localizedDescription)
+//                print("No internet")
+//
+//                // use booklet.json if no internet
+//                self.useDefaultPages()
+//            }
+//
+//            guard let data = data else { return }
+//
+//            do {
+//                //Decode retrived data with JSONDecoder and assing type of Article object
+//                let pages = try JSONDecoder().decode([Article].self, from: data)
+//
+//                //Get back to the main queue
+//                DispatchQueue.main.async {
+//                    self.pages = pages
+//                    self.pageCount = pages.count
+//                    self.createPageViewController()
+//                    self.setupPageControl()
+//                }
+//            } catch let jsonError {
+//                print(jsonError)
+//
+//                // use booklet.json if jsonError
+//                self.useDefaultPages()
+//            }
+//        }.resume()
     }
     
     private func useDefaultPages() {
@@ -187,7 +190,6 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
             pageItemController.titleString = self.pages![itemIndex].title
             pageItemController.subTitleString = self.pages![itemIndex].subtitle
             pageItemController.image = self.base64ToImage(base64: self.pages![itemIndex].imageEncoded)
-            pageItemController.subtextString = self.pages![itemIndex].subtext
             pageItemController.statementString = self.pages![itemIndex].description
             pageItemController.linkString = self.pages![itemIndex].link
             

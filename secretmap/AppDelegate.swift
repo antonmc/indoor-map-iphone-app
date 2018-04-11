@@ -46,7 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var pedometer = CMPedometer()
 
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -60,15 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
         
         self.initializeData()
-        self.intializeBeaconCloud()
-        
-        self.initializeBeacons()
         
         return true
-    }
-    
-    func intializeBeaconCloud(){
-       
     }
     
     func initializeData(){
@@ -102,93 +94,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func initializeBeacons(){
-        
-        let urlString = "https://raw.githubusercontent.com/IBM/indoor-map-iphone-app/master/secretmap/beacons.json"
-        
-//        let urlString = "https://www.ibm-fitchain.com/beacons"
-        
-        guard let url = URL(string: urlString) else {
-            print("url error")
-            return
-        }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                print("No internet")
-                
-                // use booklet.json if no internet
-                self.useDefaultBeacons()
-            }
-            
-            guard let data = data else { return }
-            
-            print(data)
-            
-            do {
-                let beacons = try JSONDecoder().decode(iBeacons.self, from: data)
-                self.addBeacons(beacons: beacons)
-            } catch let jsonError {
-                print(jsonError)
-                self.useDefaultBeacons()
-            }
-        
-        }.resume()
-        
-    }
-    
-    private func useDefaultBeacons(){
-        
-        if let path = Bundle.main.url(forResource: "beacons", withExtension: "json") {
-            
-            do {
-                let jsonData = try Data(contentsOf: path, options: .mappedIfSafe)
-                let beacons = try JSONDecoder().decode(iBeacons.self, from: jsonData)
-            
-                self.addBeacons(beacons: beacons)
-            } catch {
-                print("couldn't parse JSON data")
-            }
-        }
-    }
-    
-    private func sendZoneData(id:Int) {
-        guard let url = URL(string: "http://169.48.110.218/triggers/add") else { return }
-        let parameters: [String:Any]
-        let request = NSMutableURLRequest(url: url)
-        
-        let session = URLSession.shared
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-        let dateformatter = DateFormatter()
-        dateformatter.dateStyle = DateFormatter.Style.short
-        dateformatter.timeStyle = DateFormatter.Style.short
-        let date = dateformatter.string(from: Date())
-        
-        print(date)
-        
-        parameters = ["zone":id, "event":"enter", "timestamp":date]
-        request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
-        
-        let sendEvent = session.dataTask(with: request as URLRequest) { (data, response, error) in
-//            print(error)
-        }
-        sendEvent.resume()
-    }
-    
-    private func addBeacon( beacon:iBeacon ){
-        
-       
-    }
-
-    private func addBeacons(beacons:iBeacons){
-        for beacon in beacons.beacons{
-            self.addBeacon(beacon: beacon)
-        }
-        
-    }
     
     func getStartDate() -> Date{
         return self.startDate

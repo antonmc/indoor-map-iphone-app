@@ -86,6 +86,8 @@ class QuantityViewController: UIViewController {
         totalPrice.text = String(describing: payload!.price)
         claimButton.layer.cornerRadius = 15
         currentUser = BookletController().loadUser()
+        
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
     override func didReceiveMemoryWarning() {

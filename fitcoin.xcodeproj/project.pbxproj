@@ -54,6 +54,8 @@
 		A2AF795C207D7E0E00AA99EE /* Run@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794A207D7E0E00AA99EE /* Run@2x.png */; };
 		A2AF795D207D7E0E00AA99EE /* Run@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794B207D7E0E00AA99EE /* Run@3x.png */; };
 		A2AF795E207D7E0E00AA99EE /* Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794C207D7E0E00AA99EE /* Cloud.png */; };
+		A2AF7966207F8D5D00AA99EE /* booklet-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7965207F8D5D00AA99EE /* booklet-tab.png */; };
+		A2AF7968207F8D9F00AA99EE /* footprint-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7967207F8D9E00AA99EE /* footprint-tab.png */; };
 		A2E815A31FE876A000EC6F2A /* BookletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E815A21FE876A000EC6F2A /* BookletController.swift */; };
 		A2F099EE2059C9CD006AAABE /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F099ED2059C9CD006AAABE /* AssetViewController.swift */; };
 		A2F904F42051E242008E1FFA /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F904F02051E242008E1FFA /* Treasure.swift */; };
@@ -135,6 +137,8 @@
 		A2AF794A207D7E0E00AA99EE /* Run@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run@2x.png"; sourceTree = "<group>"; };
 		A2AF794B207D7E0E00AA99EE /* Run@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Run@3x.png"; sourceTree = "<group>"; };
 		A2AF794C207D7E0E00AA99EE /* Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cloud.png; sourceTree = "<group>"; };
+		A2AF7965207F8D5D00AA99EE /* booklet-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "booklet-tab.png"; sourceTree = "<group>"; };
+		A2AF7967207F8D9E00AA99EE /* footprint-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footprint-tab.png"; sourceTree = "<group>"; };
 		A2E815A21FE876A000EC6F2A /* BookletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletController.swift; sourceTree = "<group>"; };
 		A2F099ED2059C9CD006AAABE /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A2F904F02051E242008E1FFA /* Treasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
@@ -194,12 +198,14 @@
 				A2AF7940207D7E0D00AA99EE /* Cloud@3x.png */,
 				A2AF793C207D7E0D00AA99EE /* kubecoin logo.png */,
 				A2AF7949207D7E0E00AA99EE /* kubecoin logo@2x.png */,
+				A2AF7965207F8D5D00AA99EE /* booklet-tab.png */,
 				A2AF7945207D7E0E00AA99EE /* kubecoin logo@3x.png */,
 				A2AF793E207D7E0D00AA99EE /* Microservices.png */,
 				A2AF793B207D7E0D00AA99EE /* Microservices@2x.png */,
 				A2AF7942207D7E0D00AA99EE /* Microservices@3x.png */,
 				A2AF7947207D7E0E00AA99EE /* Run.png */,
 				A2AF794A207D7E0E00AA99EE /* Run@2x.png */,
+				A2AF7967207F8D9E00AA99EE /* footprint-tab.png */,
 				A2AF794B207D7E0E00AA99EE /* Run@3x.png */,
 				A2AF793F207D7E0D00AA99EE /* Secure.png */,
 				A2AF7948207D7E0E00AA99EE /* Secure@2x.png */,
@@ -442,11 +448,13 @@
 				A2337ACF203616CD00C0ECFF /* Pirate.scn in Resources */,
 				A2321A7820377DD900E34DA7 /* Ship.mtl in Resources */,
 				A2AF7951207D7E0E00AA99EE /* Secure.png in Resources */,
+				A2AF7968207F8D9F00AA99EE /* footprint-tab.png in Resources */,
 				A2AF7958207D7E0E00AA99EE /* Secure@3x.png in Resources */,
 				A2AF7950207D7E0E00AA99EE /* Microservices.png in Resources */,
 				A2337AD3203616D900C0ECFF /* Pirate.mtl in Resources */,
 				A2AF7952207D7E0E00AA99EE /* Cloud@3x.png in Resources */,
 				A2321A7920377DD900E34DA7 /* Ship.obj in Resources */,
+				A2AF7966207F8D5D00AA99EE /* booklet-tab.png in Resources */,
 				A2F904FF2051E2D5008E1FFA /* Treasure.mtl in Resources */,
 				A2AF795A207D7E0E00AA99EE /* Secure@2x.png in Resources */,
 				A2AF795B207D7E0E00AA99EE /* kubecoin logo@2x.png in Resources */,

@@ -22,6 +22,9 @@ class AssetViewController:UIViewController{
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        UIApplication.shared.statusBarStyle = .lightContent
+
+        
         let url = URL(string: self.link)
         if let unwrappedURL = url{
             let request = URLRequest(url: unwrappedURL)

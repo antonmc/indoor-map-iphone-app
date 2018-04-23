@@ -56,6 +56,9 @@
 		A2AF795E207D7E0E00AA99EE /* Cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF794C207D7E0E00AA99EE /* Cloud.png */; };
 		A2AF7966207F8D5D00AA99EE /* booklet-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7965207F8D5D00AA99EE /* booklet-tab.png */; };
 		A2AF7968207F8D9F00AA99EE /* footprint-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF7967207F8D9E00AA99EE /* footprint-tab.png */; };
+		A2AF796A208D384E00AA99EE /* StandingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF7969208D384E00AA99EE /* StandingsTableViewController.swift */; };
+		A2AF796C208D387C00AA99EE /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF796B208D387C00AA99EE /* Standing.swift */; };
+		A2AF796E208D38C300AA99EE /* StandingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF796D208D38C300AA99EE /* StandingViewCell.swift */; };
 		A2E815A31FE876A000EC6F2A /* BookletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E815A21FE876A000EC6F2A /* BookletController.swift */; };
 		A2F099EE2059C9CD006AAABE /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F099ED2059C9CD006AAABE /* AssetViewController.swift */; };
 		A2F904F42051E242008E1FFA /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F904F02051E242008E1FFA /* Treasure.swift */; };
@@ -139,6 +142,9 @@
 		A2AF794C207D7E0E00AA99EE /* Cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cloud.png; sourceTree = "<group>"; };
 		A2AF7965207F8D5D00AA99EE /* booklet-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "booklet-tab.png"; sourceTree = "<group>"; };
 		A2AF7967207F8D9E00AA99EE /* footprint-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "footprint-tab.png"; sourceTree = "<group>"; };
+		A2AF7969208D384E00AA99EE /* StandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewController.swift; sourceTree = "<group>"; };
+		A2AF796B208D387C00AA99EE /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
+		A2AF796D208D38C300AA99EE /* StandingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingViewCell.swift; sourceTree = "<group>"; };
 		A2E815A21FE876A000EC6F2A /* BookletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletController.swift; sourceTree = "<group>"; };
 		A2F099ED2059C9CD006AAABE /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A2F904F02051E242008E1FFA /* Treasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
@@ -291,6 +297,9 @@
 				A2234E181FF5B108002B8244 /* booklet.json */,
 				A28E57CB201659A200CE4C58 /* HealthKitManager.swift */,
 				A2F099ED2059C9CD006AAABE /* AssetViewController.swift */,
+				A2AF7969208D384E00AA99EE /* StandingsTableViewController.swift */,
+				A2AF796B208D387C00AA99EE /* Standing.swift */,
+				A2AF796D208D38C300AA99EE /* StandingViewCell.swift */,
 			);
 			path = secretmap;
 			sourceTree = "<group>";
@@ -552,10 +561,13 @@
 				922D72B2203BA8E200A345A1 /* QuantityViewController.swift in Sources */,
 				9238EC5D202D09AA00AD1535 /* BlockchainUser.swift in Sources */,
 				A2321A7B20377E0C00E34DA7 /* Ship.swift in Sources */,
+				A2AF796C208D387C00AA99EE /* Standing.swift in Sources */,
 				92BF0682203E761900B388F9 /* OrdersViewController.swift in Sources */,
 				9278B40A20461CE800D83B4D /* OrderTableViewCell.swift in Sources */,
+				A2AF796A208D384E00AA99EE /* StandingsTableViewController.swift in Sources */,
 				92BF0680203D2E0500B388F9 /* ContractViewController.swift in Sources */,
 				A28E57CC201659A200CE4C58 /* HealthKitManager.swift in Sources */,
+				A2AF796E208D38C300AA99EE /* StandingViewCell.swift in Sources */,
 				A2337ACD203616C200C0ECFF /* Pirate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

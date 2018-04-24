@@ -138,7 +138,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 of 55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-pQ-zp7">
-                                                        <rect key="frame" x="0.0" y="35" width="200" height="40"/>
+                                                        <rect key="frame" x="0.0" y="35" width="200" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="61C-kk-9qp"/>
                                                             <constraint firstAttribute="width" constant="100" id="aEo-rx-MRr"/>
@@ -148,7 +148,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxU-fK-bwc">
-                                                        <rect key="frame" x="0.0" y="75" width="200" height="20"/>
+                                                        <rect key="frame" x="0.0" y="65" width="200" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="gZs-pU-H3W"/>
                                                         </constraints>
@@ -157,7 +157,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6D-LQ-g77">
-                                                        <rect key="frame" x="0.0" y="95" width="200" height="25"/>
+                                                        <rect key="frame" x="0.0" y="85" width="200" height="35"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="DY3-Fn-5RP"/>
@@ -425,8 +425,11 @@
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="avatarImage" destination="YY2-D6-PTF" id="d53-nY-gsf"/>
                         <outlet property="distanceLabel" destination="l6e-iX-ZWS" id="b1K-CU-2kt"/>
                         <outlet property="fitcoinsLabel" destination="3vd-A1-hX3" id="FqM-6I-YPD"/>
+                        <outlet property="particpantLabel" destination="Qq2-cO-BMz" id="diz-8k-wfd"/>
+                        <outlet property="positionLabel" destination="OFj-pQ-zp7" id="koI-eV-cmV"/>
                         <outlet property="refreshButton" destination="jO7-rh-K24" id="sUp-ws-wqw"/>
                         <outlet property="stepsCountLabel" destination="h0t-6W-32d" id="NPb-ny-9Ks"/>
                         <outlet property="userIdLabel" destination="iDZ-I1-Efj" id="F9J-g1-JQe"/>

@@ -1,4 +1,4 @@
-//
+
 //  SecondViewController.swift
 //  secretmap
 //
@@ -23,6 +23,10 @@ class DataViewController: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var userIdLabel: UILabel!
     @IBOutlet weak var fitcoinsLabel: UILabel!
+    
+    @IBOutlet weak var particpantLabel:UILabel!
+    @IBOutlet weak var positionLabel:UILabel!
+    @IBOutlet weak var avatarImage:UIImageView!
     
     var currentUser: BlockchainUser?
     
@@ -65,6 +69,23 @@ class DataViewController: UIViewController {
         if currentUser != nil {
             let userId: String = currentUser!.userId
             userIdLabel?.text = userId
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            var currentPerson:Person
+            
+            var people: [Person] = []
+            
+            do {
+                people = try context.fetch(Person.fetchRequest())
+                
+                if( people.count > 0 ){
+                    currentPerson = people[0]
+                    particpantLabel?.text = currentPerson.participantname
+                    avatarImage?.image = self.base64ToImage(base64: currentPerson.avatar! )
+                }
+            }catch{
+                
+            }
             
             self.getStateOfUser(userId)
         }
@@ -270,6 +291,16 @@ class DataViewController: UIViewController {
             }
         }
         getStateOfUser.resume()
+    }
+    
+    func base64ToImage(base64: String) -> UIImage {
+        var img: UIImage = UIImage()
+        if (!base64.isEmpty) {
+            let decodedData = NSData(base64Encoded: base64 , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
+            let decodedimage = UIImage(data: decodedData! as Data)
+            img = (decodedimage as UIImage?)!
+        }
+        return img
     }
     
     private func requestUserResults(resultId: String, attemptNumber: Int, failedAttempts: Int? = 0) {

@@ -20,6 +20,11 @@ struct Article: Codable {
     let link: String
 }
 
+struct Avatar:Codable{
+    let name: String
+    let png: String
+}
+
 class BookletController: UIViewController, UIPageViewControllerDataSource {
     
     private var pageViewController: UIPageViewController?
@@ -344,13 +349,47 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
         
         let saveAsRegisteree = session.dataTask(with: request as URLRequest) { (data, response, error) in
             
-            if let _ = data {
+            if let data = data {
                 do {
+                    // Convert the data to JSON
+                    let jsonSerialized = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
                     
+                    if let json = jsonSerialized, let name = json["name"], let png = json["png"] {
+                        
+                        DispatchQueue.main.async {
+                        
+                            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                            
+                            var currentPerson:Person
+                            
+                            var people: [Person] = []
+                            
+                            do {
+                                people = try context.fetch(Person.fetchRequest())
+                                
+                                if( people.count > 0 ){
+                                    currentPerson = people[0]
+                                    
+                                    let particpant = name as! String
+                                    let avatar = png as! String
+                                    
+                                    currentPerson.setValue(particpant, forKey: "participantname")
+                                    currentPerson.setValue(avatar, forKey: "avatar")
+                                    
+                                    try context.save()
+                                }
+                            }catch{
+                                print("problem saving generated avatar")
+                            }
+                        }
+                    }
+                }  catch let error as NSError {
+                    print(error.localizedDescription)
                 }
             } else if let error = error {
                 print(error.localizedDescription)
             }
+            
         }
         saveAsRegisteree.resume()
     }

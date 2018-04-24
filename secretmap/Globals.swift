@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct BlockchainGlobals {
-    static var URL:String = "https://www.ibm-fitchain.com/"
+    static var URL:String = "https://anthony-blockchain.us-south.containers.mybluemix.net/"
 }
 
 struct GetStateFinalResult: Codable {

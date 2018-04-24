@@ -21,7 +21,7 @@ class OrdersViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let themeColor = UIColor.init(red:0.13, green:0.23, blue:0.37, alpha:1 )
+        let themeColor = UIColor(red:0.76, green:0.86, blue:0.83, alpha:1.0)
         let statusBar = UIView(frame: CGRect(x:0, y:0, width:view.frame.width, height:UIApplication.shared.statusBarFrame.height))
         statusBar.backgroundColor = themeColor
         statusBar.tintColor = themeColor

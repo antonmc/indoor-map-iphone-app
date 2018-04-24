@@ -14,7 +14,10 @@ class StandingViewCell: UITableViewCell {
     
     //MARK: Properties
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var stepsLabel: UILabel!
+    @IBOutlet weak var kmLabel:UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var positionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,13 +7,12 @@
 //
 
 import Foundation
-//
-//  MealTableViewController.swift
-//  FoodTracker
-//
-//  Created by Jane Appleseed on 11/15/16.
-//  Copyright © 2016 Apple Inc. All rights reserved.
-//
+
+struct Participant: Codable {
+    let steps: Int
+    let name: String
+    let png:String
+}
 
 import UIKit
 
@@ -21,13 +20,13 @@ class StandingsTableViewController: UITableViewController {
     
     //MARK: Properties
     
-    var meals = [Standing]()
+    var standings = [Participant]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Load the sample data.
-        loadSampleMeals()
+        getStandingsData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,9 +41,8 @@ class StandingsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return meals.count
+        return standings.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -56,10 +54,12 @@ class StandingsTableViewController: UITableViewController {
         }
         
         // Fetches the appropriate meal for the data source layout.
-        let meal = meals[indexPath.row]
+        let standing = standings[indexPath.row]
         
-//        cell.nameLabel.text = meal.name
-//        cell.photoImageView.image = meal.photo
+        cell.nameLabel.text = standing.name
+        cell.photoImageView.image = self.base64ToImage(base64: standing.png )
+        cell.positionLabel.text = String(indexPath.row + 1)
+        cell.nameLabel.text = String(standing.name)
         
         return cell
     }
@@ -112,25 +112,48 @@ class StandingsTableViewController: UITableViewController {
     
     //MARK: Private Methods
     
-    private func loadSampleMeals() {
+    
+    private func getStandingsData(){
         
-        let photo1 = UIImage(named: "meal1")
-        let photo2 = UIImage(named: "meal2")
-        let photo3 = UIImage(named: "meal3")
-        
-        guard let meal1 = Standing(name: "Caprese Salad", photo: photo1, rating: 4) else {
-            fatalError("Unable to instantiate meal1")
+        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/leaderboard/top/10"
+        guard let url = URL(string: urlString) else {
+            print("url error")
+            return
         }
         
-        guard let meal2 = Standing(name: "Chicken and Potatoes", photo: photo2, rating: 5) else {
-            fatalError("Unable to instantiate meal2")
-        }
+                URLSession.shared.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                        print("No internet")
         
-        guard let meal3 = Standing(name: "Pasta with Meatballs", photo: photo3, rating: 3) else {
-            fatalError("Unable to instantiate meal2")
-        }
+                        // use booklet.json if no internet
+                    }
         
-        meals += [meal1, meal2, meal3]
+                    guard let data = data else { return }
+        
+                    do {
+                        //Decode retrived data with JSONDecoder and assing type of Article object
+                        self.standings = try JSONDecoder().decode([Participant].self, from: data)
+        
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()
+                        }
+                        
+                    } catch let jsonError {
+                        print(jsonError)
+                    }
+                }.resume()
+    
+        
     }
     
+    func base64ToImage(base64: String) -> UIImage {
+        var img: UIImage = UIImage()
+        if (!base64.isEmpty) {
+            let decodedData = NSData(base64Encoded: base64 , options: NSData.Base64DecodingOptions.ignoreUnknownCharacters)
+            let decodedimage = UIImage(data: decodedData! as Data)
+            img = (decodedimage as UIImage?)!
+        }
+        return img
+    }
 }

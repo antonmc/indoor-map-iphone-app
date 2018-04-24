@@ -59,6 +59,7 @@
 		A2AF796A208D384E00AA99EE /* StandingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF7969208D384E00AA99EE /* StandingsTableViewController.swift */; };
 		A2AF796C208D387C00AA99EE /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF796B208D387C00AA99EE /* Standing.swift */; };
 		A2AF796E208D38C300AA99EE /* StandingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AF796D208D38C300AA99EE /* StandingViewCell.swift */; };
+		A2AF7970208F7BF100AA99EE /* standings-tab.png in Resources */ = {isa = PBXBuildFile; fileRef = A2AF796F208F7BF100AA99EE /* standings-tab.png */; };
 		A2E815A31FE876A000EC6F2A /* BookletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E815A21FE876A000EC6F2A /* BookletController.swift */; };
 		A2F099EE2059C9CD006AAABE /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F099ED2059C9CD006AAABE /* AssetViewController.swift */; };
 		A2F904F42051E242008E1FFA /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F904F02051E242008E1FFA /* Treasure.swift */; };
@@ -109,17 +110,17 @@
 		A28E57C72011558100CE4C58 /* secretmap.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = secretmap.entitlements; sourceTree = "<group>"; };
 		A28E57C92011558100CE4C58 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		A28E57CB201659A200CE4C58 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
-		A2908D6E1FE2BEE200A0E9BE /* fitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2908D6E1FE2BEE200A0E9BE /* kubecoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kubecoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2908D711FE2BEE200A0E9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2908D751FE2BEE200A0E9BE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		A2908D781FE2BEE200A0E9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2908D7A1FE2BEE200A0E9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2908D7D1FE2BEE200A0E9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2908D7F1FE2BEE200A0E9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2908D841FE2BEE200A0E9BE /* fitcoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitcoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2908D841FE2BEE200A0E9BE /* kubecoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kubecoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2908D881FE2BEE200A0E9BE /* secretmapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretmapTests.swift; sourceTree = "<group>"; };
 		A2908D8A1FE2BEE200A0E9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2908D8F1FE2BEE200A0E9BE /* fitcoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fitcoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2908D8F1FE2BEE200A0E9BE /* kubecoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kubecoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2908D931FE2BEE200A0E9BE /* secretmapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretmapUITests.swift; sourceTree = "<group>"; };
 		A2908D951FE2BEE200A0E9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2AF793B207D7E0D00AA99EE /* Microservices@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Microservices@2x.png"; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 		A2AF7969208D384E00AA99EE /* StandingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsTableViewController.swift; sourceTree = "<group>"; };
 		A2AF796B208D387C00AA99EE /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
 		A2AF796D208D38C300AA99EE /* StandingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingViewCell.swift; sourceTree = "<group>"; };
+		A2AF796F208F7BF100AA99EE /* standings-tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "standings-tab.png"; sourceTree = "<group>"; };
 		A2E815A21FE876A000EC6F2A /* BookletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookletController.swift; sourceTree = "<group>"; };
 		A2F099ED2059C9CD006AAABE /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		A2F904F02051E242008E1FFA /* Treasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		A2234DE31FF412EA002B8244 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A2AF796F208F7BF100AA99EE /* standings-tab.png */,
 				A2AF793D207D7E0D00AA99EE /* Application.png */,
 				A2AF7944207D7E0D00AA99EE /* Application@2x.png */,
 				A2AF7941207D7E0D00AA99EE /* Application@3x.png */,
@@ -264,9 +267,9 @@
 		A2908D6F1FE2BEE200A0E9BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2908D6E1FE2BEE200A0E9BE /* fitcoin.app */,
-				A2908D841FE2BEE200A0E9BE /* fitcoinTests.xctest */,
-				A2908D8F1FE2BEE200A0E9BE /* fitcoinUITests.xctest */,
+				A2908D6E1FE2BEE200A0E9BE /* kubecoin.app */,
+				A2908D841FE2BEE200A0E9BE /* kubecoinTests.xctest */,
+				A2908D8F1FE2BEE200A0E9BE /* kubecoinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,9 +328,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A2908D6D1FE2BEE200A0E9BE /* fitcoin */ = {
+		A2908D6D1FE2BEE200A0E9BE /* kubecoin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2908D981FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoin" */;
+			buildConfigurationList = A2908D981FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoin" */;
 			buildPhases = (
 				7D8E3FFFA2C06ED1B51EBC38 /* [CP] Check Pods Manifest.lock */,
 				A2908D6A1FE2BEE200A0E9BE /* Sources */,
@@ -340,14 +343,14 @@
 			);
 			dependencies = (
 			);
-			name = fitcoin;
+			name = kubecoin;
 			productName = secretmap;
-			productReference = A2908D6E1FE2BEE200A0E9BE /* fitcoin.app */;
+			productReference = A2908D6E1FE2BEE200A0E9BE /* kubecoin.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A2908D831FE2BEE200A0E9BE /* fitcoinTests */ = {
+		A2908D831FE2BEE200A0E9BE /* kubecoinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2908D9B1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoinTests" */;
+			buildConfigurationList = A2908D9B1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoinTests" */;
 			buildPhases = (
 				A2908D801FE2BEE200A0E9BE /* Sources */,
 				A2908D811FE2BEE200A0E9BE /* Frameworks */,
@@ -358,14 +361,14 @@
 			dependencies = (
 				A2908D861FE2BEE200A0E9BE /* PBXTargetDependency */,
 			);
-			name = fitcoinTests;
+			name = kubecoinTests;
 			productName = secretmapTests;
-			productReference = A2908D841FE2BEE200A0E9BE /* fitcoinTests.xctest */;
+			productReference = A2908D841FE2BEE200A0E9BE /* kubecoinTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A2908D8E1FE2BEE200A0E9BE /* fitcoinUITests */ = {
+		A2908D8E1FE2BEE200A0E9BE /* kubecoinUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2908D9E1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoinUITests" */;
+			buildConfigurationList = A2908D9E1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoinUITests" */;
 			buildPhases = (
 				A2908D8B1FE2BEE200A0E9BE /* Sources */,
 				A2908D8C1FE2BEE200A0E9BE /* Frameworks */,
@@ -376,9 +379,9 @@
 			dependencies = (
 				A2908D911FE2BEE200A0E9BE /* PBXTargetDependency */,
 			);
-			name = fitcoinUITests;
+			name = kubecoinUITests;
 			productName = secretmapUITests;
-			productReference = A2908D8F1FE2BEE200A0E9BE /* fitcoinUITests.xctest */;
+			productReference = A2908D8F1FE2BEE200A0E9BE /* kubecoinUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -415,7 +418,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A2908D691FE2BEE200A0E9BE /* Build configuration list for PBXProject "fitcoin" */;
+			buildConfigurationList = A2908D691FE2BEE200A0E9BE /* Build configuration list for PBXProject "kubecoin" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -428,9 +431,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2908D6D1FE2BEE200A0E9BE /* fitcoin */,
-				A2908D831FE2BEE200A0E9BE /* fitcoinTests */,
-				A2908D8E1FE2BEE200A0E9BE /* fitcoinUITests */,
+				A2908D6D1FE2BEE200A0E9BE /* kubecoin */,
+				A2908D831FE2BEE200A0E9BE /* kubecoinTests */,
+				A2908D8E1FE2BEE200A0E9BE /* kubecoinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -443,6 +446,7 @@
 				A2AF7954207D7E0E00AA99EE /* Microservices@3x.png in Resources */,
 				A2AF795D207D7E0E00AA99EE /* Run@3x.png in Resources */,
 				A2F904FE2051E2D5008E1FFA /* Treasure.obj in Resources */,
+				A2AF7970208F7BF100AA99EE /* standings-tab.png in Resources */,
 				A2AF794D207D7E0E00AA99EE /* Microservices@2x.png in Resources */,
 				A2F905012051E2F8008E1FFA /* Treasure.scn in Resources */,
 				A2321A7D20377E3800E34DA7 /* Ship.scn in Resources */,
@@ -593,12 +597,12 @@
 /* Begin PBXTargetDependency section */
 		A2908D861FE2BEE200A0E9BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2908D6D1FE2BEE200A0E9BE /* fitcoin */;
+			target = A2908D6D1FE2BEE200A0E9BE /* kubecoin */;
 			targetProxy = A2908D851FE2BEE200A0E9BE /* PBXContainerItemProxy */;
 		};
 		A2908D911FE2BEE200A0E9BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2908D6D1FE2BEE200A0E9BE /* fitcoin */;
+			target = A2908D6D1FE2BEE200A0E9BE /* kubecoin */;
 			targetProxy = A2908D901FE2BEE200A0E9BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -734,7 +738,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 777708ED23C79811ACDBB7EC /* Pods-fitcoin.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = secretmap/secretmap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -752,7 +756,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5A42EA1B514D8A227CB6590 /* Pods-fitcoin.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-3";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = secretmap/secretmap.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -779,7 +783,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitcoin.app/fitcoin";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kubecoin.app/kubecoin";
 			};
 			name = Debug;
 		};
@@ -796,7 +800,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitcoin.app/fitcoin";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kubecoin.app/kubecoin";
 			};
 			name = Release;
 		};
@@ -835,7 +839,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A2908D691FE2BEE200A0E9BE /* Build configuration list for PBXProject "fitcoin" */ = {
+		A2908D691FE2BEE200A0E9BE /* Build configuration list for PBXProject "kubecoin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2908D961FE2BEE200A0E9BE /* Debug */,
@@ -844,7 +848,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2908D981FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoin" */ = {
+		A2908D981FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2908D991FE2BEE200A0E9BE /* Debug */,
@@ -853,7 +857,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2908D9B1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoinTests" */ = {
+		A2908D9B1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2908D9C1FE2BEE200A0E9BE /* Debug */,
@@ -862,7 +866,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2908D9E1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "fitcoinUITests" */ = {
+		A2908D9E1FE2BEE200A0E9BE /* Build configuration list for PBXNativeTarget "kubecoinUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A2908D9F1FE2BEE200A0E9BE /* Debug */,

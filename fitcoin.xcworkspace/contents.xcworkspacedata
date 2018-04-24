@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:fitcoin.xcodeproj">
+      location = "group:/Users/antonmc/Desktop/code/kubecoin/kubecoin.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

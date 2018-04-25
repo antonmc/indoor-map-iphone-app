@@ -991,9 +991,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="think" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJF-RD-5RA">
-                                                <rect key="frame" x="112" y="0.0" width="76" height="50"/>
+                                                <rect key="frame" x="112" y="5" width="76" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="rZs-Ew-SKW"/>
+                                                    <constraint firstAttribute="height" constant="40" id="rZs-Ew-SKW"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
                                                 <color key="textColor" red="0.71372549019607845" green="0.10980392156862745" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1010,13 +1010,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdG-Zl-VXw">
                                         <rect key="frame" x="0.0" y="50" width="300" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-Xm-Xnh">
-                                                <rect key="frame" x="126" y="10" width="49" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-Xm-Xnh">
+                                                <rect key="frame" x="126" y="5" width="49" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="Raa-90-ww3"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Raa-90-ww3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                                <color key="textColor" red="0.57109576463699341" green="0.089435793459415436" blue="0.25138565897941589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.71372549019999998" green="0.10980392160000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>

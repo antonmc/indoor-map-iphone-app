@@ -44,13 +44,13 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
         else {
             self.getNumberOfRegisteredUsers(limit: 1000)
         }
-        
+                
         let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/pages"
         guard let url = URL(string: urlString) else {
             print("url error")
             return
         }
-        
+
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
                 print(error!.localizedDescription)

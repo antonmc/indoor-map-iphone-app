@@ -10,6 +10,12 @@ import UIKit
 import HealthKit
 import CoreMotion
 
+struct Place:Codable{
+    var userPosition: Int
+    var count: Int
+    var steps: Int
+}
+
 class DataViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate
@@ -83,6 +89,9 @@ class DataViewController: UIViewController {
                     particpantLabel?.text = currentPerson.participantname
                     avatarImage?.image = self.base64ToImage(base64: currentPerson.avatar! )
                 }
+                
+                self.showPosition()
+                
             }catch{
                 
             }
@@ -291,6 +300,42 @@ class DataViewController: UIViewController {
             }
         }
         getStateOfUser.resume()
+    }
+    
+    func showPosition() {
+        
+        var myPlace = Place(userPosition:0, count:0, steps:0)
+        
+        let urlString =  BlockchainGlobals.URL + "leaderboard/position/user/" + currentUser!.userId
+        
+        if let url = URL(string: urlString){
+            
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    print("No internet")
+                }
+                
+                guard let data = data else { return }
+                
+                do {
+                    //Decode retrived data with JSONDecoder and assing type of Article object
+                    myPlace = try JSONDecoder().decode(Place.self, from: data)
+                    
+                    print(myPlace)
+                    
+                    DispatchQueue.main.async {
+                        self.positionLabel.text = String(myPlace.userPosition) + " of " + String(myPlace.count)
+                    }
+                    
+                } catch let jsonError {
+                    print(jsonError)
+                }
+                }.resume()
+            
+        } else {
+            print("registrant url error")
+        }
     }
     
     func base64ToImage(base64: String) -> UIImage {

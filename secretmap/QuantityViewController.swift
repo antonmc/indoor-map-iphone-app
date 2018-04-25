@@ -54,7 +54,7 @@ class QuantityViewController: UIViewController {
         stepper.isEnabled = false
         claimButton.alpha = 0.5
         stepper.alpha = 0.5
-        if fitcoins! - pendingCharges! > Int(totalPrice.text!)! {
+        if fitcoins! - pendingCharges! >= Int(totalPrice.text!)! {
             self.purchaseItem()
         }
         else {

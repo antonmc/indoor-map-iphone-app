@@ -60,6 +60,9 @@ class StandingsTableViewController: UITableViewController {
         cell.photoImageView.image = self.base64ToImage(base64: standing.png )
         cell.positionLabel.text = String(indexPath.row + 1)
         cell.nameLabel.text = String(standing.name)
+        cell.stepsLabel.text = String(standing.steps) + " steps"
+        
+        self.tableView.allowsSelection = false;
         
         return cell
     }
@@ -115,7 +118,7 @@ class StandingsTableViewController: UITableViewController {
     
     private func getStandingsData(){
         
-        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/leaderboard/top/10"
+        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/leaderboard/top/100"
         guard let url = URL(string: urlString) else {
             print("url error")
             return

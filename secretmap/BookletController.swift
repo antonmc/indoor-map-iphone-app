@@ -45,44 +45,41 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
             self.getNumberOfRegisteredUsers(limit: 1000)
         }
         
-        let urlString = "https://www.ibm-fitchain.com/pages"
+        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/pages"
         guard let url = URL(string: urlString) else {
             print("url error")
             return
         }
         
-        
-        self.useDefaultPages()
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+                print("No internet")
 
-//        URLSession.shared.dataTask(with: url) { (data, response, error) in
-//            if error != nil {
-//                print(error!.localizedDescription)
-//                print("No internet")
-//
-//                // use booklet.json if no internet
-//                self.useDefaultPages()
-//            }
-//
-//            guard let data = data else { return }
-//
-//            do {
-//                //Decode retrived data with JSONDecoder and assing type of Article object
-//                let pages = try JSONDecoder().decode([Article].self, from: data)
-//
-//                //Get back to the main queue
-//                DispatchQueue.main.async {
-//                    self.pages = pages
-//                    self.pageCount = pages.count
-//                    self.createPageViewController()
-//                    self.setupPageControl()
-//                }
-//            } catch let jsonError {
-//                print(jsonError)
-//
-//                // use booklet.json if jsonError
-//                self.useDefaultPages()
-//            }
-//        }.resume()
+                // use booklet.json if no internet
+                self.useDefaultPages()
+            }
+
+            guard let data = data else { return }
+
+            do {
+                //Decode retrived data with JSONDecoder and assing type of Article object
+                let pages = try JSONDecoder().decode([Article].self, from: data)
+
+                //Get back to the main queue
+                DispatchQueue.main.async {
+                    self.pages = pages
+                    self.pageCount = pages.count
+                    self.createPageViewController()
+                    self.setupPageControl()
+                }
+            } catch let jsonError {
+                print(jsonError)
+
+                // use booklet.json if jsonError
+                self.useDefaultPages()
+            }
+        }.resume()
     }
     
     private func useDefaultPages() {
@@ -344,7 +341,7 @@ class BookletController: UIViewController, UIPageViewControllerDataSource {
         let session = URLSession.shared
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        parameters = ["registereeId": userId, "steps":0, "calories":0]
+        parameters = ["registereeId": userId, "steps":0, "calories":0, "device":"ios"]
         request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
         
         let saveAsRegisteree = session.dataTask(with: request as URLRequest) { (data, response, error) in

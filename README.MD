@@ -3,7 +3,7 @@ Kubecoin
 
 Kubecoin is a blockchain/fitness concept that uses a mobile app to convert a participant's footsteps into our own crypo-currency 'kubecoins'.
 
-![kubecoin screens](https://raw.githubusercontent.com/antonmc/kubecoin/master/design/Kubecoin screens.png)
+![kubecoin screens](https://raw.githubusercontent.com/antonmc/kubecoin/master/design/screens.png)
 
 
 Insurance companies, Government agencies, and employers are all interested in encouraging healthiness of clients, citizens, staff. For example, [Carrot Rewards](https://www.carrotrewards.ca/home/) from Canadian federal and provincial government agencies.

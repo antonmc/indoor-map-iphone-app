@@ -174,7 +174,6 @@ class DataViewController: UIViewController {
                         // Sending fitcoins sequence here
                         self.sendingInProgress = true
                         
-                        
                         let userId: String? = self.currentUser!.userId
                         
                         // Send to fitchain network

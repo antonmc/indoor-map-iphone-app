@@ -985,7 +985,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1hF-aE-5Wt">
-                                <rect key="frame" x="37.5" y="108.5" width="300" height="450"/>
+                                <rect key="frame" x="37.5" y="103.5" width="300" height="460"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-4V-fh6">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -1011,11 +1011,11 @@
                                         <rect key="frame" x="0.0" y="50" width="300" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9t-Xm-Xnh">
-                                                <rect key="frame" x="126" y="5" width="49" height="40"/>
+                                                <rect key="frame" x="128.5" y="5" width="44.5" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Raa-90-ww3"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.71372549019999998" green="0.10980392160000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1028,13 +1028,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="Oiu-hr-yVA">
-                                        <rect key="frame" x="0.0" y="100" width="300" height="150"/>
+                                        <rect key="frame" x="0.0" y="100" width="300" height="210"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8rl-aB-WtY">
-                                                <rect key="frame" x="60" y="-15" width="180" height="180"/>
+                                                <rect key="frame" x="50" y="5" width="200" height="200"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="180" id="Olu-nK-oJI"/>
-                                                    <constraint firstAttribute="width" constant="180" id="pLS-HF-rCe"/>
+                                                    <constraint firstAttribute="height" constant="200" id="Olu-nK-oJI"/>
+                                                    <constraint firstAttribute="width" constant="200" id="pLS-HF-rCe"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
@@ -1042,11 +1042,11 @@
                                         <constraints>
                                             <constraint firstItem="8rl-aB-WtY" firstAttribute="centerX" secondItem="Oiu-hr-yVA" secondAttribute="centerX" id="Iri-Y7-cnq"/>
                                             <constraint firstItem="8rl-aB-WtY" firstAttribute="centerY" secondItem="Oiu-hr-yVA" secondAttribute="centerY" id="QTD-iz-JUP"/>
-                                            <constraint firstAttribute="height" constant="150" id="ffm-Co-RMG"/>
+                                            <constraint firstAttribute="height" constant="140" id="ffm-Co-RMG"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWE-b9-FuQ">
-                                        <rect key="frame" x="0.0" y="250" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="310" width="300" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="An IBM Code Experiment" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3G-b5-np5">
                                                 <rect key="frame" x="50" y="0.0" width="200" height="100"/>
@@ -1068,17 +1068,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMr-WH-rLx">
-                                        <rect key="frame" x="0.0" y="350" width="300" height="100"/>
+                                        <rect key="frame" x="0.0" y="410" width="300" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaJ-lu-rHr">
-                                                <rect key="frame" x="85" y="30" width="130" height="40"/>
+                                                <rect key="frame" x="85" y="5" width="130" height="40"/>
                                                 <color key="backgroundColor" red="0.71372549019607845" green="0.10980392156862745" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="130" id="ABZ-h3-Fw1"/>
                                                     <constraint firstAttribute="height" constant="40" id="mmi-W3-zfa"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                                <state key="normal" title="Learn more ...">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                <state key="normal" title="learn more">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
@@ -1089,12 +1089,13 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="MaJ-lu-rHr" firstAttribute="centerY" secondItem="vMr-WH-rLx" secondAttribute="centerY" id="SPV-Kx-O1O"/>
+                                            <constraint firstAttribute="height" constant="50" id="bTh-76-6St"/>
                                             <constraint firstItem="MaJ-lu-rHr" firstAttribute="centerX" secondItem="vMr-WH-rLx" secondAttribute="centerX" id="cPU-2C-R3F"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="0aK-ia-vzO"/>
+                                    <constraint firstAttribute="height" constant="460" id="0aK-ia-vzO"/>
                                     <constraint firstAttribute="width" constant="300" id="9Sp-hx-u62"/>
                                 </constraints>
                             </stackView>

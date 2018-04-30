@@ -22,10 +22,20 @@ class StandingsTableViewController: UITableViewController {
     
     var standings = [Participant]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:  #selector(getStandingsData), for: UIControlEvents.valueChanged)
+        self.refreshControl = refreshControl
+        
         // Load the sample data.
+        getStandingsData()
+    }
+    
+    @objc private func refreshStandingsData(_ sender: Any) {
+        // Fetch Weather Data
         getStandingsData()
     }
     
@@ -116,9 +126,9 @@ class StandingsTableViewController: UITableViewController {
     //MARK: Private Methods
     
     
-    private func getStandingsData(){
+    @objc private func getStandingsData(){
         
-        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/leaderboard/top/100"
+        let urlString = "https://anthony-blockchain.us-south.containers.mybluemix.net/leaderboard/top/50"
         guard let url = URL(string: urlString) else {
             print("url error")
             return
@@ -140,15 +150,19 @@ class StandingsTableViewController: UITableViewController {
         
                         DispatchQueue.main.async {
                             self.tableView.reloadData()
+                            self.refreshControl?.endRefreshing()
+//                            self.refreshControl?.endRefreshing()
+//                            self.activityIndicatorView.stopAnimating()
                         }
                         
                     } catch let jsonError {
                         print(jsonError)
                     }
                 }.resume()
-    
+
         
     }
+    
     
     func base64ToImage(base64: String) -> UIImage {
         var img: UIImage = UIImage()

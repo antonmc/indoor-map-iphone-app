@@ -86,6 +86,5 @@ class BookletItemController: UIViewController {
         
         button?.layer.cornerRadius = 20
         button?.clipsToBounds = true
-
     }
 }
